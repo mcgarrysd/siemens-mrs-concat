@@ -41,7 +41,7 @@ for dat_file in "${dat_files[@]}"; do
     fi
 
     echo "Converting $dat_file"
-    spec2nii twix -e image --anon \
+    spec2nii twix -e image \
         "${dimensions[@]}" \
         -f "$stem" -o "$output_dir" "$dat_file"
 done

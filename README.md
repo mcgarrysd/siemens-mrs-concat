@@ -67,8 +67,9 @@ The script:
 - converts the `image` data from each file;
 - maps `Cha` to `DIM_COIL` and `Set` to `DIM_DYN`;
 - also maps `Eco` to `DIM_EDIT` when that loop is present;
-- uses the input basename for each `.nii.gz` output; and
-- passes `--anon` to `spec2nii`.
+- uses the input basename for each `.nii.gz` output.
+
+The script does not anonymize the converted headers. Review the NIfTI-MRS metadata before sharing converted data.
 
 ## 2. Concatenate each metabolite pair
 
